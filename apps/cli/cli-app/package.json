@@ -1,0 +1,17 @@
+{
+  "name": "cli-app",
+  "bin": {
+    "cli-app": "./dist/index.js"
+  },
+  "type": "module",
+  "module": "index.ts",
+  "scripts": {
+    "dev": "bun --watch ./src/index.ts",
+    "start": "bun run ./src/index.ts",
+    "build": "bun build ./src/index.ts --outdir dist",
+    "test": "echo \"No test specified\" && exit 0"
+  },
+  "dependencies": {
+    "shared": "workspace:*"
+  }
+}
